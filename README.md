@@ -1,7 +1,7 @@
 # K_nearest_neighbor
 Implementation of the k-Nearest Neighbors algorithm for classification and regression tasks.
 
-K_nearest_neighbor is a implementation of the k-Nearest Neighbors (KNN) algorithm. It’s designed for learning, experimentation, and small-scale machine-learning projects involving classification or regression.
+K_nearest_neighbor is an implementation of the k-Nearest Neighbors (KNN) algorithm. It’s designed for learning, experimentation, and small-scale machine-learning projects involving classification or regression.
 
 Features
 
@@ -28,5 +28,3 @@ For each new sample:
 3. Classification: choose the majority label.
 4. Regression: average the neighbor values.
 
-License
-MIT License
