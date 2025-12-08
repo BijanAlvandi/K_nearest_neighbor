@@ -10,7 +10,11 @@ def euclidean_distance(point1, point2):
     return squared_sum**0.5
 
 def manhattan_distance(point1, point2):
-    pass
+    abs_sum = 0
+    for i in range(len(point1)):
+        difference = point1[i] - point2[i]
+        abs_sum += abs(difference)
+    return abs_sum
 
 def chebyshev_distance(point1, point2):
     pass
