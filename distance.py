@@ -1,31 +1,35 @@
+import numpy as np
 
-p1 = [1,2,3]
-p2 = [4,5,6]
+p1 = [1, 2, 3]
+p2 = [4, 5, 6]
 
-def euclidean_distance(point1, point2):
-    squared_sum = 0
-    for i in range(len(point1)):
-        difference = point1[i] - point2[i]
-        squared_sum += difference**2
-    return squared_sum**0.5
 
-def manhattan_distance(point1, point2):
-    abs_sum = 0
-    for i in range(len(point1)):
-        difference = point1[i] - point2[i]
-        abs_sum += abs(difference)
-    return abs_sum
+def euclidean_distance(vector1, vector2):
+    np_vector1 = np.asarray(vector1)
+    np_vector2 = np.asarray(vector2)
+    return np.sqrt(np.sum(np_vector1 - np_vector2) ** 2)
 
-def chebyshev_distance(point1, point2):
+
+def manhattan_distance(vector1, vector2):
+    np_vector1 = np.asarray(vector1)
+    np_vector2 = np.asarray(vector2)
+    return np.sum(np.abs(p1 - p2))
+
+
+def chebyshev_distance(vector1, vector2):
     pass
 
-def hamming_distance(point1, point2):
+
+def hamming_distance(vector1, vector2):
     pass
 
-def cosine_distance(point1, point2):
+
+def cosine_distance(vector1, vector2):
     pass
 
-def canberra_distance(point1, point2):
+
+def canberra_distance(vector1, vector2):
     pass
 
-euclidean_distance(p1, p2)
+
+
